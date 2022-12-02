@@ -226,7 +226,7 @@ def main():
     runners_name, runners_id = runners_data()
     MENU = "1. Show the results for a race \n2. Add results for a race \n3. Show all competitors by county " \
            "\n4. Show the winner of each race \n5. Show all the race times for one competitor " \
-           "\n6. Show all competitors who have won a race \n7. Quit \n>>> "
+           "\n6. Show all competitors who have won a race \n7. Option coming soon \n8. Quit \n>>> "
     input_menu = read_integer_between_numbers(MENU, 1, 7)
 
     while True:
@@ -246,6 +246,8 @@ def main():
         elif input_menu == 6:
             displaying_runners_who_have_won_at_least_one_race(races_location, runners_name, runners_id)
         elif input_menu == 7:
+            print("This option is not available yet cause we don't know how to do that lol")
+        elif input_menu == 8:
             exit()
         print()
         input_menu = read_integer_between_numbers(MENU, 1, 7)
