@@ -29,7 +29,7 @@ def read_integer(prompt):
 
 
 def runners_data():
-    with open("runners.txt") as input:
+    with open("files/runners.txt") as input:
         lines = input.readlines()
     runners_name = []
     runners_id = []
@@ -51,7 +51,7 @@ def race_results(races_location):
 
 
 def race_venues():
-    with open("Races.txt") as input:
+    with open("files/Races.txt") as input:
         lines = input.readlines()
     races_location = []
     for line in lines:
