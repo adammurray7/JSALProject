@@ -226,7 +226,7 @@ def main():
     runners_name, runners_id = runners_data()
     MENU = "1. Show the results for a race \n2. Add results for a race \n3. Show all competitors by county " \
            "\n4. Show the winner of each race \n5. Show all the race times for one competitor " \
-           "\n6. Show all competitors who have won a race \n7. Option coming soon \n8. Quit \n>>> "
+           "\n6. Show all competitors who have won a race \n7. Option coming soon \n8. quit \n>>> "
     input_menu = read_integer_between_numbers(MENU, 1, 7)
 
     while True:
