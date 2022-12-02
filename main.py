@@ -124,14 +124,14 @@ def competitors_by_county(name, id):
 
 
 def reading_race_results(location):
-    with open(f"{location}.txt") as input_type:
+    with open(f"files/{location}.txt") as input_type:
         lines = input_type.readlines()
     id = []
     time_taken = []
     for line in lines:
-        split_line = line.split(",".strip("\n"))
+        split_line = line.strip("\n").split(",")
         id.append(split_line[0])
-        time_taken.append(int(split_line[1].strip("\n")))
+        time_taken.append(int(split_line[1]))
     return id, time_taken
 
 
