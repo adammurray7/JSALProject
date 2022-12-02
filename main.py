@@ -251,7 +251,7 @@ def main():
             exit()
         print()
         input_menu = read_integer_between_numbers(MENU, 1, 8)
-    updating_races_file(races_location)
+        updating_races_file(races_location)
 
 
 main()
