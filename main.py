@@ -51,7 +51,7 @@ def race_results(races_location):
 
 
 def race_venues():
-    with open("files/Races.txt") as input:
+    with open("files/races.txt") as input:
         lines = input.readlines()
     races_location = []
     for line in lines:
@@ -103,7 +103,7 @@ def users_venue(races_location, runners_id):
 
 
 def updating_races_file(races_location):
-    connection = open(f"races.txt", "w")
+    connection = open(f"files/races.txt", "w")
     for i in range(len(races_location)):
         print(races_location[i], file=connection)
     connection.close()
