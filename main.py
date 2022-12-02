@@ -251,6 +251,7 @@ def main():
         elif input_menu == 7:
             print("This option is not available yet cause we don't know how to do that lol")
         elif input_menu == 8:
+            print("GoodBye !!")
             exit()
         print()
         input_menu = read_integer_between_numbers(MENU, 1, 8)
