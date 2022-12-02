@@ -89,16 +89,16 @@ def users_venue(races_location, runners_id):
         user_location = read_nonempty_string("Where will the new race take place? ").capitalize()
         if user_location not in races_location:
             break
-    connection = open(f"{user_location}.txt", "a")
+    connection = open(f"files/{user_location}.txt", "a")
     races_location.append(user_location)
     time_taken = []
     updated_runners = []
     for i in range(len(runners_id)):
         time_taken_for_runner = read_integer(f"Time for {runners_id[i]} >> ")
-        if time_taken_for_runner == 0:
+        if time_taken_for_runner != 0:
             time_taken.append(time_taken_for_runner)
             updated_runners.append(runners_id[i])
-            print(f"{runners_id[i]},{time_taken_for_runner},", file=connection)
+            print(f"{runners_id[i]},{time_taken_for_runner}", file=connection)
     connection.close()
 
 
