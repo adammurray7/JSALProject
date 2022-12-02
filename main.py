@@ -56,7 +56,7 @@ def race_venues():
     races_location = []
     for line in lines:
         line = line.split(",")
-        line = line[0]
+        line = line[0].strip("\n")
         races_location.append(line)
     return races_location
 
