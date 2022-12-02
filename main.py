@@ -113,6 +113,7 @@ def competitors_by_county(name, id):
     for i in range(len(name)):
         if id[i].startswith("CK"):
             print(f"{name[i]} ({id[i]})")
+    print("")
     print("Kerry runners")
     print("=" * 20)
     for i in range(len(name)):
