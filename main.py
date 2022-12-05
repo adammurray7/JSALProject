@@ -109,7 +109,7 @@ def updating_races_file(races_location):
     connection.close()
 
 
-def competitors_by_county(name, id):
+def competitors_by_county(name, id): # have to create a function to get country codes into a list, and then for loop it.
     print("Cork runners")
     print("=" * 20)
     for i in range(len(name)):
