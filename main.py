@@ -110,6 +110,12 @@ def updating_races_file(races_location):
 
 
 def competitors_by_county(name, id): # have to create a function to get country codes into a list, and then for loop it.
+    print("Clare runners")
+    print("=" * 20)
+    for i in range(len(name)):
+        if id[i].startswith("Cl"):
+            print(f"{name[i]} ({id[i]})")
+    print("")
     print("Cork runners")
     print("=" * 20)
     for i in range(len(name)):
@@ -121,6 +127,25 @@ def competitors_by_county(name, id): # have to create a function to get country 
     for i in range(len(name)):
         if id[i].startswith("KY"):
             print(f"{name[i]} ({id[i]})")
+    print("")
+    print("Limerick runners")
+    print("=" * 20)
+    for i in range(len(name)):
+        if id[i].startswith("LK"):
+            print(f"{name[i]} ({id[i]})")
+    print("")
+    print("Tipperary runners")
+    print("=" * 20)
+    for i in range(len(name)):
+        if id[i].startswith("TP"):
+            print(f"{name[i]} ({id[i]})")
+    print("")
+    print("Waterford runners")
+    print("=" * 20)
+    for i in range(len(name)):
+        if id[i].startswith("WD"):
+            print(f"{name[i]} ({id[i]})")
+
 
 
 def reading_race_results(location):
