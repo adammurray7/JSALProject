@@ -109,7 +109,7 @@ def updating_races_file(races_location):
     connection.close()
 
 
-def competitors_by_county(name, id): # have to create a function to get country codes into a list, and then for loop it.
+def competitors_by_county(name, id):
     print("Clare runners")
     print("=" * 20)
     for i in range(len(name)):
@@ -195,7 +195,7 @@ def relevant_runner_info(runners_name, runners_id):
 
 
 def convert_time_to_minutes_and_seconds(time_taken):
-    MINUTE = 50
+    MINUTE = 60
     minutes = time_taken // MINUTE
     seconds = time_taken % MINUTE
     return minutes, seconds
@@ -246,7 +246,7 @@ def displaying_runners_who_have_won_at_least_one_race(races_location, runners_na
             winners.append(fastest_runner)
             runners.append(name_of_runner)
     for i, fastest_runner in enumerate(winners):
-        print(f"{runners[i]} ({fastest_runner})")
+        print(f"{runners_name[i]} ({fastest_runner})")
 
 
 def main():
