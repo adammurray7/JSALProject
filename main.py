@@ -246,7 +246,7 @@ def displaying_runners_who_have_won_at_least_one_race(races_location, runners_na
             winners.append(fastest_runner)
             runners.append(name_of_runner)
     for i, fastest_runner in enumerate(winners):
-        print(f"{runners[i]} ({fastest_runner})")
+        print(f"{runners_name[i]} ({fastest_runner})")
 
 
 def main():
