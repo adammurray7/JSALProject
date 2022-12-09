@@ -183,6 +183,8 @@ def displaying_winners_of_each_race(races_location):
         id, time_taken = reading_race_results(races_location[i])
         fastest_runner = winner_of_race(id, time_taken)
         print(f"{races_location[i]:<18s}{fastest_runner}")
+    print("** Podium places unavailable **")
+
 
 
 def relevant_runner_info(runners_name, runners_id):
